@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 pipeline {
   agent {
     docker {
@@ -14,7 +16,7 @@ pipeline {
           docker -v
           python -V
           ansible --version
-          molecule --version
+        molecule --version
         '''
       }
     }
